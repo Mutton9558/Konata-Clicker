@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/konatadead.jpg"/>
+    <title>Konata Clicker</title>
+</head>
+<body>
+    <audio id="audio1" src="/music/bgmusic1.mp3" preload="auto"></audio>
+    <audio id="audio2" src="/music/bgmusic2.mp3" preload="auto"></audio>
+    <div id="center-content">
+        <div id="title-web">
+            <h1>Konata Clicker</h1>
+        </div>
+        <div id="click-area">
+            <img src="img/konatadead.jpg" id="target-img">
+            <div id="bottom-items-click-area">
+                <h3>Click to gain score!</h3>
+                <p>Score: <span id="score">0</span></p>
+                <button id="upgrade-btn" class="btn-disabled" onclick=upgradeClicks() disabled>Upgrade: <span id="upgrade-amount">10</span> Clicks!</button>
+            </div>
+        </div>
+    </div>  
+    <script src="script.js"></script>    
+</body>
+</html>
