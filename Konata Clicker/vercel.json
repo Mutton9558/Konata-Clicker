@@ -1,7 +1,7 @@
 {
     "version": 2,
     "builds": [
-        {"src": "konata.html", "use": "@vercel/html"}
+        {"src": "konata.html"}
     ],
     "routes": [
         {"src": "/(.*)", "dest": "konata.html"}
