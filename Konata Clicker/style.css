@@ -17,12 +17,13 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100%;
     background-color: #f6f6fa;
 }
 
 #click-space{
     height: 80%;
-    width: 100%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,7 +34,7 @@
     display: flex;
     flex-direction: column;
     width: 30rem;
-    height: 30rem;
+    height: 65%;
     justify-content: center;
     align-items: center;
     border: 4px black solid;
@@ -71,7 +72,7 @@
 button{
     background-color: lightgreen;
     color: black;
-    width: 8rem;
+    width: 80%;
     height: 2.4rem;
     margin-top: 2ch;
     border-radius: 10px;
@@ -118,4 +119,42 @@ button{
 
 #audio-child label, #audio-child input{
     z-index: 2;
+}
+
+@media only screen and (max-width: 1000px){
+    #click-space{
+        width: 100%;
+    }
+    #click-area{
+        width: 22rem;
+        justify-content: flex-start;
+        padding: 2ch;
+    }
+
+
+    #audio-child input{
+        margin-left: 0;
+        width: 25%;
+    }
+}
+
+
+@media only screen and (max-width: 360px){
+    #click-space{
+        width: 100%;
+    }
+    #click-area{
+        width: 18rem;
+        justify-content: flex-start;
+        padding: 2ch;
+    }
+
+    .audioSliders{
+        width: 60%;
+    }
+
+    #audio-child input{
+        margin-left: 0;
+        width: 25%;
+    }
 }
