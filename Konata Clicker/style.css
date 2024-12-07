@@ -16,6 +16,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    background-color: #f6f6fa;
+}
+
+#click-space{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #click-area{
@@ -28,6 +38,7 @@
     align-items: center;
     border: 4px black solid;
     border-radius: 20px;
+    background-color: white;
 }
 
 #bottom-items-click-area {
@@ -39,6 +50,10 @@
     margin-bottom: 1rem;
     align-items: center;
     justify-content: center;
+}
+
+#bottom-items-click-area h3, #bottom-items-click-area p, #bottom-items-click-area button{
+    z-index: 2;
 }
 
 #target-img{
@@ -74,5 +89,33 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 12rem;
+    height: 20%;
+    letter-spacing: 0.6ch;
+}
+
+.audioSliders{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 3%;
+    margin-bottom: 5%;
+    border: 2px black solid;
+    border-radius: 10px;
+    background-color: lightcyan;
+}
+
+#audio-child{
+    display: flex;
+    justify-content: space-between;
+    padding: 1ch;
+}
+
+#audio-child input{
+    margin-left: 4ch;
+    accent-color: gray;
+    color: #050418;
+}
+
+#audio-child label, #audio-child input{
+    z-index: 2;
 }
