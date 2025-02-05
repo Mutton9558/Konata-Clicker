@@ -74,7 +74,7 @@ function upgradeClicks(){
     topLocation = Math.floor(Math.random()*96);
     leftLocation = Math.floor(Math.random()*96);
     imgID += 1
-    randImageLoc.innerHTML += `<img src="img/konatagoodjob.png" style="position: absolute;top: ${topLocation}%;left: ${leftLocation}%;z-index: 1;" height="50" width="50" id="konata-random-img-${imgID}">`
+    randImageLoc.innerHTML += `<img src="img/konatagoodjob.png" style="position: absolute;top: ${topLocation}%;left: ${leftLocation}%;z-index: 1;pointer-events: none;" height="50" width="50" id="konata-random-img-${imgID}">`
 }
 
 function playAudio(){
